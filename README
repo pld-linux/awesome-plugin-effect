@@ -1,0 +1,28 @@
+Effects
+
+With the Effect "class", you can "tween" properties of objects or functions with different transitions
+Its a port of the Mootools Fx classes.
+
+Usage
+
+Simple use (for tweening the opacity): 
+see example-tweening-opacity.lua.
+
+When using a function instead of an object it is important 
+that the function can set and return your properties via a table.
+
+Example (asuming you want to tween x and y of a client instance c):
+
+	fx = Effect.create(function (geom) {
+	  return c:geometry(geom)
+	end
+	fx:start({x = 10, y = 10})
+
+
+
+
+My currently use
+
+You can find a video of it on vimeo (http://vimeo.com/13056382)
+See example-using.lua.
+
